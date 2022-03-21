@@ -1,0 +1,162 @@
+
+/*esta é a configuração de toda (*) pagina do meu tema*/
+/*este é o reset ou seja o inicio de nossa pagian (*)*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto";
+ }
+
+.center{
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+
+/*inicio => configuração de toda a sessão inicial => menu*/
+section.topo {
+	background-image: linear-gradient(114deg, #250e8a, #00f9f7);
+	padding-top: 40px;
+	padding-bottom: 80px;
+}
+/*vai ser usado flutuação e não flexbox=> será dado o clear para evitar conflitos*/
+
+.clear{clear: both;}
+
+
+/*veja que a class="logo" terá a flutuação a esqueda*/
+.logo{ 
+	float: left;
+}
+
+/*veja que a class="menu-desktop" terá a flutuação a direita*/
+.menu-desktop{
+	float: right;
+}
+
+.menu-desktop li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+/*estilizando ou personalizando o link a */
+.menu-desktop a{
+	text-decoration: none;
+	color: white;
+	opacity: 0.6;
+}
+/*usando hover quando passar o mouse por cima*/
+.menu-desktop a:hover{
+	opacity: 1;
+}
+
+/*fim => configuração de toda a sessão inicial => menu*/
+
+/*
+   Classes auxiliares
+*/
+
+.w50{
+/*isto fará com que pegue 50% da tela*/	
+ float: left; width: 50%; 
+ padding:  0 15px; 
+
+}
+/*quando a imagem estiver altrapassando => maior que a tela*/
+/*técnica para deixar sempre responsivo e não quebrar.*/
+.time-imagem img{
+	max-width: 100%;
+}
+
+
+.time-descricao{
+	margin-top: 50px;
+	color: white;
+}
+.time-descricao h2{
+	font-size: 45px;
+}
+.time-descricao p{
+	font-size: 14px;
+	margin-top: 10px;
+	max-width: 240px;
+}
+.time-descricao a {
+	display: inline-block;
+	margin-top: 14px;
+	padding: 10px 8px;
+	text-decoration: none;
+	color: #1b49a5;
+	font-weight: bold;
+	border-radius: 8px;
+	background: #ffca00;
+	box-shadow: 0 20px 30px 0 rgba(37, 15, 138, 0.2);
+}
+
+/*inicio - configuração icone fontawasean*/
+.circle{
+	position: absolute;
+	left: 50%;
+	margin-top: -20px;
+	/*transform => centralizar 100%*/
+	transform: translateX(-50%);
+	width: 70px;
+	height: 70px;
+	text-align: center;
+	line-height: 70px;
+	border-radius: 50%;
+	background-color: #ffffff;
+	box-shadow: 0 10px 25px 0 rgba(37, 15, 139, 0.1);
+}
+.circle i{
+	position: relative;
+	top: 5px;
+	font-size: 30px;
+	color: #1c4aa6;
+}
+/*fim */
+
+section.clientes-slider{
+	padding: 60px 0;
+}
+
+section.clientes-slider img{padding:0 20px;}
+/*inicio Slick Slider*/
+  .slick-dotted ul{
+  	list-style-type: none;
+  	text-align: center;
+  	position: relative;
+  	margin-top: 10px;
+  }
+  .slick-dotted li{
+  	display: inline-block;
+  	margin: 0 7px;
+  }
+  .slick-dotted button:focus{
+  	outline: 0;
+  }
+  .slick-dotted li button{
+  	width: 16px;
+  	height: 16px;
+  	border-radius: 8px;
+  	color: #d8d8d8;
+  	border-width: 0;
+  	background: #d8d8d8;
+  	opacity: 1;
+  	cursor: pointer;
+  }
+  /*active => é a bolinha que esta ativa*/
+  li.slick-active button{
+    background: #0c3f8a;
+    color: #0c3f8a;
+  }
+
+
+/*Fim Slick Slider*/
+
+/*responsividade de tela*/
+@media screen and (max-width: 768px){
+	.w50{ width: 100%; }
+}
