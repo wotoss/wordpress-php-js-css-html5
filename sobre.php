@@ -53,5 +53,67 @@
 	</div>	
 	</section>
 
+	<!--imagens-sobre-->
+	<section class="sobre-imagens">
+		<div class="center">
+		  <div class="img-sobre">
+		  	<img src="images/imagem-sobre.jpg" />
+		  </div>
+
+		   <div class="img-sobre">
+		  	<img src="images/imagem-sobre.jpg" />
+		  </div>	
+
+		   <div class="img-sobre">
+		  	<img src="images/imagem-sobre.jpg" />
+		  </div>	
+
+		   <div class="img-sobre">
+		  	<img src="images/imagem-sobre.jpg" />
+		  </div>	
+
+		</div>
+	</section>
+
+		<!--inicio => rodapé footer-->
+     <footer>
+     <!--inicio => tela com efeito => cobrepondo o azul-->
+	   <section class="metodologia">
+		 <div class="center">
+			<h2>Conheça nossa Metodologia</h2>
+			<p>O que você acha de fazermos o que mais gostamosde fazer? Conversar! <br />
+			Entre em contato por e-mail ou telefone.</p>
+			<a href="/contato">Entrar Contato</a>
+		 </div>
+	  </section>
+
+     	<div class="center">
+
+     	  <div class="col-footer">
+     	  	<h2>Suporte</h2>
+     	  	<a href="">Contato</a>
+     	  	<a href="">FAQ</a>
+     	  </div>	
+
+     	  <div class="col-footer">
+     	  	<h2>Consultoria</h2>
+     	  	<a href="">Contato</a>
+     	  	<a href="">FAQ</a>
+     	  </div>	
+
+     	  <div class="col-footer">
+     	  	<h2>Empresa</h2>
+     	  	<a href="">Contato</a>
+     	  	<a href="">FAQ</a>
+     	  </div>	
+
+     	   <div style="width: 40%; text-align: right;" class="col-footer">
+     	  	 <img src="images/logo-footer.png" />
+     	  </div>	
+
+     	</div>
+     </footer>
+	<!--fim => rodapé footer-->
+
  </body>
 </html>

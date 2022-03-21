@@ -402,6 +402,25 @@ section.sobre-equipe img { max-width: 100%; }
 	padding: 0 20px; /*espaçamento inferior e superior é zero (0) => e direta e esquerda 20px espaçamento*/
 }
 
+section.sobre-imagens{
+	padding: 100px 0;
+	background-color: #f4f9fd;
+}
+
+.sobre-imagens > .center{
+	display: flex; /*faz o alinhamento => um do lado do outro*/
+	flex-wrap: wrap;
+}
+
+.sobre-imagens img {
+	max-width: 100%; /*para garantir a responsividade*/
+}
+
+.sobre-imagens .img-sobre{
+	padding: 0 30px;
+	width: 25%;
+}
+
 /*responsividade de tela*/
 @media screen and (max-width: 768px){
 	div.box-single-diferenciais{ width: 100%; } /*para acertar a imagem um em baixo do outro. mexemmos tambem =>  div.box-single-diferenciais img*/
@@ -416,6 +435,8 @@ section.sobre-equipe img { max-width: 100%; }
 		text-align: center !important;
 	}
 	section.sobre-equipe img{margin-top: 20px;} /*espaçamento do topo 20px;*/
+
+	.sobre-imagens .img-sobre{padding: 0 30px; width: 100%; text-align: center; margin-bottom: 20px;}
 }
 
 
