@@ -244,12 +244,81 @@ section.clientes-slider img{padding:0 20px;}
 
 /*Fim Slick Slider*/
 
+
+/*iniciar a sessão time de trabalho tela azul claro*/
+
+section.sobre-time{
+	padding: 40px 0; /*seria um espaçamento em superior e em inferior => 0 á esquerda e direita*/
+	background-color: #f4f9fd;
+}
+
+.img-time img{max-width: 100%}
+
+.time-descricao-2{
+	padding: 0 20px; /*espaçamento na parte inferior e superior é 0 => já na esquerda e direita 20px; */
+}
+
+.time-descricao-2 h2{
+	color: #202020;
+	line-height: 35px; /* line-height => é uma distância entre as linhas*/
+	font-size: 24px;
+	margin-bottom: 30px; /*margin-bottom => para manter uma distância dou outro texto => no caso o (tituto e o texto)*/
+}
+
+.time-descricao-2 p{
+	color: #272727;
+	padding-right: 30px; /*padding-right => distanciar ou espaçamento a direita o paragrafo da outra imagem*/
+	font-size: 15px;
+}
+
+
+/*fechar a sessão de trabalho*/
+
+/* iniciar => sessão depoimento */
+section.depoimentos{
+	padding: 100px 0px; /*espaçamento => 100px na parte inferior e superior. 0 a direita e esquerda*/
+	background-color: #23188f;
+}
+
+section.depoimentos h2{
+	text-align: center;
+	color: white;
+	font-weight: normal;
+	font-size: 30px;
+}
+.depoimentos-box {
+	margin:10px auto;
+	max-width: 800px;
+	overflow: hidden;
+	width: 100%;
+	display: block;
+}
+.depoimentos-single{width: 100%; display: inline-block;}
+.depoimentos-single p{ text-align: center; margin-bottom: 15px; color: white;}
+.depoimentos-box img{
+	width: 100px; /*width => comprimento =>configurar o tamanho da foto*/
+	height: 100px; /*height => altura =>configurar o tamanho da foto*/
+	display: block;
+	margin: 10px auto; /*margin => estando com auto => ele centraliza*/
+	border-radius: 50%; /*deixando as bordas arredondadas*/
+}
+
+/* fechar depoimento*/
+
 /*responsividade de tela*/
 @media screen and (max-width: 768px){
 	div.box-single-diferenciais{ width: 100%; } /*para acertar a imagem um em baixo do outro. mexemmos tambem =>  div.box-single-diferenciais img*/
 	.w50{ width: 100%; }
+	.img-time{margin-top:30px;}
 	.menu-desktop {display: none;}
 	.menu-mobile {display: block;}
 }
 
 
+/*
+ ana.santos@faculdadeimpacta.com.br
+
+ copia
+
+ adriana.garcia@faculdadeimpacta.com.br
+*/

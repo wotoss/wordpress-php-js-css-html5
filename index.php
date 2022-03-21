@@ -104,9 +104,58 @@
 			</div><!--icons-diferenciais-->
 		</div>
 
-
-		
 	</section>
+
+	<section class="sobre-time">
+		<div class="center">
+			<!--w50 representa a divisão da tela => configurada no css-->
+			<div class="w50 time-descricao-2">
+				<h2>Um time experiente, <br/>comunicador e coeso</h2>
+
+				<p>A Product Runt acredita que marcas fortes são construídas a partir de transformações importantes e positivas na vida dos consumidores. Exatamente como uma conversa que ganha forma, a ideia vira flâmula.
+				<br /><br/>
+				Comunicar bem, de forma coerente e clara não é algo fácil e estamos aqui para ajudar você e seu time. Você escolhe, remoto ou presencial, para seu cliente ou seu público interno, você determina como vamos te ajuda.</p>				
+			</div><!--w50-->
+            <!--w50 representa a divisão da tela => configurada no css-->
+            <div class="w50 img-time">
+            	<img src="images/time.png" />
+            </div>
+            <!--como estamos usando float não podemos esquecer da class=clear que esta configurada no css-->
+            <!--tenho que sempre limpar a flutuação-->
+            <div class="clear"></div>
+		</div>
+	</section>
+
+	<!--inicio => vamos para a sessão de depoimentos-->
+	<section class="depoimentos">
+		<div class="center">
+			<h2>Depoimentos</h2>
+			<div class="depoimentos-box">
+				<div class="depoimentos-single">
+				  <p>" Aliqua quis ut duis eiusmod laboris aliquip elit consequat incididunt occaecat minim in consequat ut id culpa veniam. Ut mollit culpa laboris reprehenderit esse id anim anim quis in sed laborum irure mollit culpa."
+				  </p>
+				  <p>Woto Santana</p>
+				  <img src="images/autor.jpg" />
+				</div><!--depoimentos-single-->
+
+				<div class="depoimentos-single">
+				  <p>" Aliqua quis ut duis eiusmod laboris aliquip elit consequat incididunt occaecat minim in consequat ut id culpa veniam. Ut mollit culpa laboris reprehenderit esse id anim anim quis in sed laborum irure mollit culpa."
+				  </p>
+				  <p>Woto Santana</p>
+				  <img src="images/autor.jpg" />
+				</div><!--depoimentos-single-->
+
+				<div class="depoimentos-single">
+				  <p>" Aliqua quis ut duis eiusmod laboris aliquip elit consequat incididunt occaecat minim in consequat ut id culpa veniam. Ut mollit culpa laboris reprehenderit esse id anim anim quis in sed laborum irure mollit culpa."
+				  </p>
+				  <p>Woto Santana</p>
+				  <img src="images/autor.jpg" />
+				</div><!--depoimentos-single-->
+			</div><!--depoimentos-box-->
+		</div>
+	</section>
+
+	<!--fim => depoimentos-->
 
     <!--no html5 isto (type="text/javascript") já foi retirado não precisa acrescentar -->
 	<script src="js/jquery.js"></script>
@@ -124,6 +173,24 @@
 	        autoplaySpeed: 3000,
 	        pauseOnHover: false,
 	        responsive:
+	        [
+	        {
+	        	breakpoint: 768,
+	        	settings: {
+	        		slidesToShow: 2
+	        	}
+	        }
+	        ]
+       }); 	
+
+        $('section.depoimentos .depoimentos-box').slick({
+	        dots: true,
+	        arrows: false,
+	        infinite: true,
+	        speed: 1000,
+	        slidesToShow: 1, /*colocamos (1) pois é (um) depoimento por mês.*/
+	        autoplay: true,
+	        centerMode:false
 	        [
 	        {
 	        	breakpoint: 768,
