@@ -305,6 +305,83 @@ section.depoimentos h2{
 
 /* fechar depoimento*/
 
+/* inicio rodapé*/
+
+section.metodologia{
+	position: absolute; 
+	/*z-index: 10 é o maior valor =>*/
+	z-index: 10;/* para garantir que sempre vai ficar na parte de cima => independente do navegador*/
+	top:-40px; /*top:-40px; => seria o valor correspondente que vai subir => nossa tela em branca.*/
+	left: 50%; /*quando dou o left a minha tela vai até o meio ou centro*/
+	width: 100%; /*dentro de uma largura que é 100%*/
+	transform: translateX(-50%); /*dai eu dou um translateX(-50%) ele encontra o eixo*/
+
+    /*estas 5 propriedades de cima que fazem a tela subir*/
+
+	max-width: 940px; /*max-width => tamanho da tela 940px; com efeito em branco*/
+	margin: 0 auto;
+	padding: 40px 0;
+
+	background: white;
+	border-top: 3px solid #ffca00;
+	box-shadow: 10px 20px 60px 0 rgba(0, 0, 0, 0.06);
+	text-align: center;
+}
+
+section.metodologia h2{
+	color: #232931;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+section.metodologia p{
+	font-size: 14px;
+	color: #b4b4b4;
+	margin: 15px 0;
+}
+
+/*esta é a estilização do link mas poderia ser um botão*/
+section.metodologia a{
+	text-decoration: none; /*todo link (a) vem sublinhado então a gosto eu retiro => text-decoration: none; */
+    color: white;
+    padding: 8px 15px; /*terá um espaçamento de 4px superior e inferior e 10px a esquerda e direita*/
+    background-color: #23188f;
+    border-radius: 5px;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 8px;
+}
+/*fim - rodapé*/
+footer{
+	position: relative;
+	padding-top: 300px;
+	padding-bottom: 100px;
+	background: white;
+}
+
+footer > .center{
+	display: flex; /*vai alinhar*/
+	flex-wrap: wrap; /*quando acabar vai colocar em baixo*/
+}
+
+.col-footer{
+	width: 20%;
+}
+.col-footer h2{
+    color: #232931;
+    font-size: 13px;
+    font-weight: normal; 
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.col-footer a{
+	color: #b4b4b4;
+	font-size: 13px;
+	display: block; /*display: block; => para ficar um em baixo do outro.*/
+	margin-top: 16px;
+	text-decoration: none;
+}
+
 /*responsividade de tela*/
 @media screen and (max-width: 768px){
 	div.box-single-diferenciais{ width: 100%; } /*para acertar a imagem um em baixo do outro. mexemmos tambem =>  div.box-single-diferenciais img*/
@@ -312,6 +389,12 @@ section.depoimentos h2{
 	.img-time{margin-top:30px;}
 	.menu-desktop {display: none;}
 	.menu-mobile {display: block;}
+	.col-footer{
+		margin-bottom: 30px;
+		/*a nivel de prioridade o o html esta na frente => então eu coloco o !important => pois lá iniciamos a style*/
+		width: 100% !important; 
+		text-align: center !important;
+	}
 }
 
 
@@ -321,4 +404,7 @@ section.depoimentos h2{
  copia
 
  adriana.garcia@faculdadeimpacta.com.br
+
+
+ Pegar a conta luz => Conta luz
 */
