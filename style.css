@@ -382,6 +382,26 @@ footer > .center{
 	text-decoration: none;
 }
 
+/*pagina-sobre*/
+section.sobre-equipe{
+	padding: 40px 0;
+}
+
+section.sobre-equipe img { max-width: 100%; }
+
+
+.equipe-sobre-texto h2{
+	font-size: 45px; /*tamanho da fonte*/
+	color: #202020; /*cor da fonte*/
+	padding: 0 20px; /* zero (0) no espaçamento superior e inferior => 20px na esquerda e direita */
+}
+.equipe-sobre-texto p{
+	font-size: 16px; /*tamanho da fonte*/
+	line-height: 32px; /*line-height => espaçamento entre as linhas*/
+	color: #202020; /*cor da fonte*/
+	padding: 0 20px; /*espaçamento inferior e superior é zero (0) => e direta e esquerda 20px espaçamento*/
+}
+
 /*responsividade de tela*/
 @media screen and (max-width: 768px){
 	div.box-single-diferenciais{ width: 100%; } /*para acertar a imagem um em baixo do outro. mexemmos tambem =>  div.box-single-diferenciais img*/
@@ -395,6 +415,7 @@ footer > .center{
 		width: 100% !important; 
 		text-align: center !important;
 	}
+	section.sobre-equipe img{margin-top: 20px;} /*espaçamento do topo 20px;*/
 }
 
 
