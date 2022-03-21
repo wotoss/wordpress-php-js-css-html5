@@ -3,6 +3,8 @@
 <html>
 <head>
 	<title>Woto Informatica - Tema</title>
+    <!--para garantir que não vamos ter problemas com acentuação.-->
+	<meta charset="utf-8">
 	<!--esta tag meta garante que fique design responsivo sempre de acordo com o despositivo exemplo: tablet, computador, celular e outros-->
      <meta name="viewport"content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
      <!--link para usar o fontawesome-->
@@ -50,7 +52,7 @@
 	<section class="clientes-slider">		
 		<div class="center">
 	    <div style="max-width: 700px;margin: 0 auto;overflow: hidden;" class="slider-container">		
-          <img src="images/amazon.jpg" />
+            <img src="images/amazon.jpg" />
 			<img src="images/costco.jpg" />
 			<img src="images/dominos.jpg" />
 			<img src="images/uber.jpg" />
@@ -63,6 +65,38 @@
 
          </div>
 		</div><!--center-->	
+	</section>
+
+	<section class="diferenciais">
+
+		<div class="center">
+			<h2>Contribuímos de ponta a ponta</h2>
+
+			<div class="icons-diferenciais">
+
+				<div class="box-single-diferenciais">
+					<img src="images/icon1.png">
+					<h3>Ambientes Mobile</h3>
+					<p>Garanta que toda sua comunicação esteja alinhada com seu propôsito, cada palavra conta.</p>
+				</div><!--box-single-diferenciais-->
+
+				<div class="box-single-diferenciais">
+					<img src="images/icon2.png">
+					<h3>Ambientes Mobile</h3>
+					<p>Garanta que toda sua comunicação esteja alinhada com seu propôsito, cada palavra conta.</p>
+				</div><!--box-single-diferenciais-->
+
+				<div class="box-single-diferenciais">
+					<img src="images/icon3.png">
+					<h3>Ambientes Mobile</h3>
+					<p>Garanta que toda sua comunicação esteja alinhada com seu propôsito, cada palavra conta.</p>
+				</div><!--box-single-diferenciais-->
+				
+			</div><!--icons-diferenciais-->
+		</div>
+
+
+		
 	</section>
 
     <!--no html5 isto (type="text/javascript") já foi retirado não precisa acrescentar -->
