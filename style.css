@@ -14,6 +14,46 @@
 	padding: 0 2%;
 }
 
+/* 1º coisa que vou fazer é esconder este menu pois não estou no mobile e sim na tela co pc*/
+/* veja que fiz outra configuração para quando entrar no 768px mobile*/
+.menu-mobile{
+	display: none;
+}
+/*menu ficará a direita => quando responsivo => tela 768px;*/
+.menu-mobile{
+	float: right;
+}
+/*estilizando o icone*/
+.menu-mobile i{
+	font-size: 33px;
+	color: white;
+	cursor: pointer;
+}
+/*esta estilização no ul e que deixa o menu mobile abaixo 768px em toda a tela*/
+.menu-mobile ul{
+	left: 0;
+	top: 77px; /*distanciamento do nosso menu mobile referente ao topo da pagina*/
+	display: none;
+	width: 100%;
+	position: absolute;
+	list-style-type: none; /*para tirar as bolinhas do lado ou (bullet)*/
+}
+
+/*estou estilizando o texto dentro da li*/
+.menu-mobile li{
+	padding: 8px 0; /*este padding 8px esta distanciando em cima e em baixo e o 0 nada nas laterais direita e esquerda*/
+	text-align: center;
+	display: block;
+	width: 100%;
+	background: white; /*vou deixar o meu mobile abaixo dos 768px; em branco*/
+	border-bottom: 1px solid #00f9f7;
+}
+
+.menu-mobile a{
+	display: block; /*quando eu ponho display:block => o efeito fica para todo o bloco => exemplo => cursor point*/
+	text-decoration: none;
+	color: #202020;
+}
 
 /*inicio => configuração de toda a sessão inicial => menu*/
 section.topo {
@@ -208,4 +248,8 @@ section.clientes-slider img{padding:0 20px;}
 @media screen and (max-width: 768px){
 	div.box-single-diferenciais{ width: 100%; } /*para acertar a imagem um em baixo do outro. mexemmos tambem =>  div.box-single-diferenciais img*/
 	.w50{ width: 100%; }
+	.menu-desktop {display: none;}
+	.menu-mobile {display: block;}
 }
+
+

@@ -27,6 +27,15 @@
 			<li><a href="">Sobre</a></li>
 			<li><a href="">Contato</a></li>
 		</ul>
+		<!--menu celular tablet moblile-->
+		<div class="menu-mobile">
+		 <i class="fas fa-align-right"></i>
+		   <ul>
+			 <li><a href="">Home</a></li>
+			 <li><a href="">Sobre</a></li>
+			 <li><a href="">Contato</a></li>
+		   </ul>
+		</div><!--menu-mobile-->
 		<div class="clear"></div>
 		<br />
 		<br />
@@ -126,5 +135,16 @@
        }); 	
      </script>
 	<!--fim js-->
+
+    <!--
+    	menu responsivo em jquery lembrando que no css 
+    	.menu-mobile ul{ display: none; } que faz (ocultar sumir) o menu
+    	e aqui após o click no icone  $('.menu-mobile i')montamos a logica.
+    -->
+	<script type="text/javascript">
+        $('.menu-mobile i').click(function(){
+        	$('.menu-mobile').find('ul').slideToggle();
+        })
+	</script>
 </body>
 </html>
