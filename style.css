@@ -421,6 +421,81 @@ section.sobre-imagens{
 	width: 25%;
 }
 
+/*inicio => pagina de contato*/
+ section.contato{
+ 	padding: 30px 0;
+ }
+
+ div.contato-info h2{
+ 	color: #202020;
+ 	font-size: 43px;
+ 	font-weight: normal;
+ }
+ .contato-info p{
+ 	color: #202020;
+ 	font-size: 15px;
+ 	margin-bottom: 10px; /*margin-bottom => distanciamento de cada item */
+ }
+
+ .mapa-container{
+ 	width: 100%; /*width: 100%; => vai pegar todo o container */
+ 	padding-top: 70%; /*padding-top: => deixar a altura igual a largura*/
+ 	/*quando uso padding-top: => o conteudo vai para baixo => então dou um position: relative; para poder maniular*/
+ 	position: relative; 
+ }
+
+ div#mapa{
+ 	position: absolute; /*position: absolute; => eu consigo manipular livrimente tudo do containner*/
+ 	left: 0;
+ 	top: 0;
+ 	width: 100%;
+ 	height: 100%;
+ 	background-color: gray;
+ }
+
+.contato-form {padding: 0 30px; margin-top: 30px; }
+ .contato-form input[type=text]{
+    width: 100%;
+    height: 48px;
+    margin-bottom: 10px; /*para não ficar um input grudado no outro*/
+    border: solid 1px #e3e3e3; /*controlando bordas => nesta caso (0) retirando*/
+    padding-left: 30px;
+    font-size: 16px;/*tecnica de design responsivo para quando entrar nos dispositivos moveis não dar o zoom*/
+    box-shadow: 0 2px 4px 0 rgba(92, 99, 110, 0.1); /*box-shadow: => cria um efeito no input*/
+ }
+ .contato-form select{
+ 	width: 100%;
+    height: 48px;
+    margin-bottom: 15px; /*para não ficar um input grudado no outro*/
+    border: solid 1px #e3e3e3; /*controlando bordas => nesta caso (0) retirando*/
+    padding-left: 8px;
+    font-size: 16px;/*tecnica de design responsivo para quando entrar nos dispositivos moveis não dar o zoom*/
+    box-shadow: 0 2px 4px 0 rgba(92, 99, 110, 0.1); /*box-shadow: => cria um efeito no input*/
+   
+ }
+ .contato-form textarea{
+    width: 100%;
+    height: 120px;
+    margin-bottom: 15px; /*para não ficar um input grudado no outro*/
+    border: solid 1px #e3e3e3; /*controlando bordas => nesta caso (0) retirando*/
+    padding: 30px;
+    font-size: 16px;/*tecnica de design responsivo para quando entrar nos dispositivos moveis não dar o zoom*/
+    box-shadow: 0 2px 4px 0 rgba(92, 99, 110, 0.1); /*box-shadow: => cria um efeito no input*/
+    resize: none; /* resize: none; => foi retirado a possibilidade do usuario aumentar o textarea*/
+}
+ .contato-form input[type=submit]{
+ 	width: 200px;
+ 	height: 50px;
+ 	border-radius: 5px;
+ 	box-shadow: 0 20px 30px 0 rgba(203, 203, 203, 0.2);
+ 	background-color: #212a97;
+ 	border:0; /*controlando a borda do botão => neste caso retirando a borda*/
+ 	cursor: pointer; /*colocar a mãozinha, mostrando que é clicavel*/
+ 	color: white;
+ 	font-size: 17px;
+ }
+/*fim => pagina de contato*/
+
 /*responsividade de tela*/
 @media screen and (max-width: 768px){
 	div.box-single-diferenciais{ width: 100%; } /*para acertar a imagem um em baixo do outro. mexemmos tambem =>  div.box-single-diferenciais img*/
