@@ -53,7 +53,8 @@
      			<!--mapa dentro da sessão contatos-->
      		<div class="mapa-container">
      			<div id="mapa"></div>
-     		</div><!--mapa-->
+                <!--colocarei o mapa pelo arquivo mapa.js-->
+     		   </div><!--mapa-->
      	   </div>
 
      	   <!--iniciando formulario-->
@@ -112,48 +113,10 @@
 
     <!--no html5 isto (type="text/javascript") já foi retirado não precisa acrescentar -->
 	<script src="js/jquery.js"></script>
-	<script src="js/slick.min.js"></script>
-	<!--inicio - javaScript-->
-     <script type="text/javascript">
-       $('section.clientes-slider .slider-container').slick({
-	        dots: true,
-	        arrows: false,
-	        infinite: false,
-	        speed: 1000,
-	        slidesToShow: 4,
-	        autoplay: true,
-	        centerMode:false,
-	        autoplaySpeed: 3000,
-	        pauseOnHover: false,
-	        responsive:
-	        [
-	        {
-	        	breakpoint: 768,
-	        	settings: {
-	        		slidesToShow: 2
-	        	}
-	        }
-	        ]
-       }); 	
-
-        $('section.depoimentos .depoimentos-box').slick({
-	        dots: true,
-	        arrows: false,
-	        infinite: true,
-	        speed: 1000,
-	        slidesToShow: 1, /*colocamos (1) pois é (um) depoimento por mês.*/
-	        autoplay: true,
-	        centerMode:false
-	        [
-	        {
-	        	breakpoint: 768,
-	        	settings: {
-	        		slidesToShow: 2
-	        	}
-	        }
-	        ]
-       }); 	
-     </script>
+    <!--minha key gerada para o uso do google maps -->
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDHPNQxozOzQSZ-djvWGOBUsHkBUoT_qH4'></script>
+    <!--chamada do arquivo map.js-->
+    <script src="js/map.js"></script>
 	<!--fim js-->
 
     <!--

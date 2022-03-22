@@ -5,6 +5,8 @@
 	<title>Woto Informatica - Tema</title>
     <!--para garantir que não vamos ter problemas com acentuação.-->
 	<meta charset="utf-8">
+	<!--incluindo icone-->
+	<link rel="icon"  href="images/batman.ico" type="image/x-icon">
 	<!--esta tag meta garante que fique design responsivo sempre de acordo com o despositivo exemplo: tablet, computador, celular e outros-->
      <meta name="viewport"content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
      <!--link para usar o fontawesome-->
